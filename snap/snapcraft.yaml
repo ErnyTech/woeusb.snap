@@ -20,7 +20,7 @@ apps:
       - removable-media
       - raw-usb
       - optical-drive
-      - block-devices
+      - mount-observe 
   woeusbgui:
     command: desktop-launch $SNAP/bin/woeusbgui
     plugs:
@@ -32,7 +32,7 @@ apps:
       - removable-media
       - raw-usb
       - optical-drive
-      - block-devices
+      - mount-observe 
 
 parts:
   desktop-gtk3:
