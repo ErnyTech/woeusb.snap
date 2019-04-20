@@ -35,8 +35,8 @@ apps:
       - mount-observe 
 
 parts:
-  desktop-gtk3:
-  wxwidgets-3-0-gtk3:
+  desktop-gtk2:
+  wxwidgets-3-0-gtk2:
   woeusb:
     source: https://github.com/slacka/WoeUSB.git
     source-tag: *version
