@@ -13,9 +13,10 @@ apps:
   woeusb:
     command: bin/woeusb
   woeusbgui:
-    command: bin/woeusbgui
+    command: desktop-launch $SNAP/bin/woeusbgui
 
 parts:
+  wxwidgets-3-0-gtk3:
   woeusb:
     source: https://github.com/slacka/WoeUSB.git
     source-tag: *version
@@ -28,4 +29,3 @@ parts:
       - build-essential
       - dh-autoreconf
       - libwxgtk3.0-dev
-      - realpath
