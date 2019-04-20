@@ -30,3 +30,14 @@ parts:
       - build-essential
       - dh-autoreconf
       - libwxgtk3.0-dev
+    stage-packages:
+      - dosfstools
+      - gettext
+      - grub2-common
+      - grub-pc-bin
+      - ntfs-3g
+      - p7zip-full
+      - parted
+      - policykit-1
+      - wget
+      - libwxgtk3.0-0v5
