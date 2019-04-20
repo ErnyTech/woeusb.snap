@@ -60,3 +60,8 @@ parts:
       - policykit-1
       - wget
       - libwxgtk3.0-0v5
+      - overlay-scrollbar
+      - overlay-scrollbar-gtk2
+      - libatk-adaptor
+      - libgail-common
+      - libcanberra-gtk-module
