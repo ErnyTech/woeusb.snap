@@ -1,0 +1,31 @@
+name: woe-usb
+version: &version v3.3.0
+summary: WoeUSB is a tool to create Windows USB stick
+description: |
+    WoeUSB is a simple tool that enable you to create your own 
+    usb stick windows installer from an iso image or a real DVD. 
+    It is a fork of Congelli501's WinUSB.
+
+confinement: strict
+grade: stable
+
+apps:
+  woeusb:
+    command: bin/woeusb
+  woeusbgui:
+    command: bin/woeusbgui
+
+parts:
+  woeusb:
+    source: https://github.com/slacka/WoeUSB.git
+    source-tag: *version
+    source-type: git
+    plugin: autotools
+    override-build: |
+      autoreconf --force --install
+      snapcraftctl build
+    build-packages:
+      - build-essential
+      - dh-autoreconf
+      - libwxgtk3.0-dev
+      - realpath
