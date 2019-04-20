@@ -21,6 +21,7 @@ apps:
       - raw-usb
       - optical-drive
       - mount-observe 
+      - udisks2
   woeusbgui:
     command: desktop-launch $SNAP/bin/woeusbgui
     plugs:
@@ -33,6 +34,7 @@ apps:
       - raw-usb
       - optical-drive
       - mount-observe 
+      - udisks2
 
 parts:
   desktop-gtk2:
