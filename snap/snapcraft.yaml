@@ -12,8 +12,24 @@ grade: stable
 apps:
   woeusb:
     command: bin/woeusb
+    plugs:
+      - home
+      - removable-media
+      - raw-usb
+      - optical-drive
+      - block-devices
   woeusbgui:
     command: desktop-launch $SNAP/bin/woeusbgui
+    plugs:
+      - x11
+      - wayland 
+      - desktop
+      - desktop-legacy
+      - home
+      - removable-media
+      - raw-usb
+      - optical-drive
+      - block-devices
 
 parts:
   desktop-gtk3:
