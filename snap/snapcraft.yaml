@@ -16,6 +16,7 @@ apps:
     command: desktop-launch $SNAP/bin/woeusbgui
 
 parts:
+  desktop-gtk3:
   wxwidgets-3-0-gtk3:
   woeusb:
     source: https://github.com/slacka/WoeUSB.git
